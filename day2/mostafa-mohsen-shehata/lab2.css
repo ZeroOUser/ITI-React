@@ -1,0 +1,86 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+}
+section {
+    padding: 15px 200px;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    font-size: 9px;
+}
+.clear {
+    clear: both;
+}
+.title {
+    margin: 15px 0;
+    line-height: 20px;
+}
+.title button {
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 8px;
+    background-color: rgb(101, 59, 8);
+}
+/* *************************** */
+.section-1 {
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-1 .header {
+    text-transform: capitalize;
+    background-color: white;
+    padding: 10px;
+    color: rgb(188, 128, 55);
+}
+.section-1 .header h4 {
+    float: left;
+}
+.section-1 .header ul {
+    list-style: none;
+    float: right;
+    font-size: 14px;
+}
+.section-1 ul li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.section-1 .title {
+    margin: 135px 0 0;
+    color: white;
+}
+
+/* *********************************** */
+
+.section-2 span {
+    display: inline-block;
+    margin-right: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+}
+.section-2 span:last-of-type {
+    margin: 0;
+}
+
+/* *********************************** */
+
+.section-3 .container {
+    padding: 0 30px;
+}
+.section-3 img {
+    width: 165px;
+    height: 165px;
+    margin: 10px;
+
+}
+
+/* i know we can set specific class or id or another way but i am lazy */
+.section-3 img:last-of-type, .section-3 img:nth-last-of-type(5) {
+    margin-right: 0;
+}
