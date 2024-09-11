@@ -1,41 +1,41 @@
-// //////////////////////////////////////////// 1 ///////////////////////////////////////////
-// alert("Lab 1!!!!!!!!!!!!!");
-// var again;
-// do {
-//     var input = prompt("Enter your text");
-//     var search_word = prompt("Enter the word to be searched");
-//     input = input.trim();
-//     search_word = search_word.trim();
-//     search_word += " ";
-//     var position = input.indexOf(search_word);
-//     if (position == -1) alert(search_word + " doesn't exist");
-//     else alert(search_word + " exists at position " + (position + 1));
-//     again = confirm("Again ?");
-// } while(again);
-// //////////////////////////////////////////////////////////////////////////////////////////
-// //////////////////////////////////////////// 2 ///////////////////////////////////////////
-// alert("Lab 2!!!!!!!!!!!!!");
-// var arr = [];
-// for (var i = 0; i < 5; i++) {
-//     number = prompt("Enter a value");
-//     arr.push(number);
-// }
-// var num = prompt("Enter number to be searched");
-// position = arr.indexOf(num, 0);
-// console.log(arr);
-// console.log("positions::")
-// while(position != -1) console.log(position + 1), position = arr.indexOf(num, ++position);
-// //////////////////////////////////////////////////////////////////////////////////////////
-// //////////////////////////////////////////// 3 ///////////////////////////////////////////
-// alert("Lab 3!!!!!!!!!!!!!");
-// var arr = [];
-// for (var i = 0; i < 5; i++) {
-//     number = prompt("Enter a value");
-//     arr.push(number);
-// }
-// var temparr = [...arr];
-// console.log("Lab 3:: Array in ascending order =", arr.sort(), "\nArray in descending order =", [...arr].reverse(),
-//             "\nOriginal Array =", temparr);
+//////////////////////////////////////////// 1 ///////////////////////////////////////////
+alert("Lab 1!!!!!!!!!!!!!");
+var again;
+do {
+    var input = prompt("Enter your text");
+    var search_word = prompt("Enter the word to be searched");
+    input = input.trim();
+    search_word = search_word.trim();
+    search_word = " " + search_word + " ";
+    var position = input.indexOf(search_word);
+    if (position == -1) alert(search_word + " doesn't exist");
+    else alert(search_word + " exists at position " + (position + 1));
+    again = confirm("Again ?");
+} while(again);
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////// 2 ///////////////////////////////////////////
+alert("Lab 2!!!!!!!!!!!!!");
+var arr = [];
+for (var i = 0; i < 5; i++) {
+    number = prompt("Enter a value");
+    arr.push(number);
+}
+var num = prompt("Enter number to be searched");
+position = arr.indexOf(num, 0);
+console.log(arr);
+console.log("positions::")
+while(position != -1) console.log(position + 1), position = arr.indexOf(num, ++position);
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////// 3 ///////////////////////////////////////////
+alert("Lab 3!!!!!!!!!!!!!");
+var arr = [];
+for (var i = 0; i < 5; i++) {
+    number = prompt("Enter a value");
+    arr.push(number);
+}
+var temparr = [...arr];
+console.log("Lab 3:: Array in ascending order =", arr.sort(), "\nArray in descending order =", [...arr].reverse(),
+            "\nOriginal Array =", temparr);
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////// 4 ///////////////////////////////////////////
 document.writeln("<hr><hr><h1>Lab 4!!!!!!!</h1>");
