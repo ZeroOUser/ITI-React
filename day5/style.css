@@ -4,14 +4,17 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
 /* ***************************************** */
+
 .add-card-container {
     background-color: #eeee;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 30vw;
+    width: 90vw;
+    max-width: 500px;
     margin: 10px auto;
     position: relative;
     margin-top: 15px;
@@ -36,15 +39,19 @@
 .add-card-container input[type="button"]:focus {
     background-color: #ddd;
 }
+
 /* ***************************************** */
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     background-color: #eee;
     padding: 10px;
     min-height: 50vh;
     margin: 10px auto;
-    width: 50vw;
+    max-width: 800px;
+    width: 90vw;
+    border-radius: 10px;
 }
 
