@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #FFF8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.displayNone {
+    display: none !important;
+}
+
+/* ***************************************** */
+
+.container {
+    background-color: #F7EED3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 60vh;
+    max-width: 500px;
+    width: 100vw;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.container .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .input-field {
+    width: 100%;
+    position: relative;
+}
+.container .input-field .button {
+    position: absolute;
+    width: fit-content;
+    height: 100%;
+    padding: 15px 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.container .input-field .button:hover {
+    cursor: pointer;
+    background-position: right center;
+    text-decoration: none;
+}
+.container .input-field .add {
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+}
+ 
+.container .input-field input {
+    width: 100%;
+    padding: .7em;
+    border-radius: 25px;
+    border: 1px solid gray;
+    text-indent: 10px;
+    background-color: #FFEAC5;
+    color: grey;
+    font-size: 1.1em;
+    outline: none;
+}
+.container .input-field input:hover {
+    background-color: transparent;
+    box-shadow: 0 1px 20px 3px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+/* ***************************************** */
+
+.container .todo-items {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+.container .todo-items .todo-item {
+    padding: 5px;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 15px;
+}
+.container .todo-items .todo-item div.completed {
+    text-decoration: line-through;
+    color: rgb(146, 146, 146);
+}
+.container .todo-items .todo-item i {
+    padding: 5px;
+}
+.container .todo-items .todo-item > * {
+    display: flex;
+    align-items: center;
+}
+button.editConfirm {
+    grid-column: span 2;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #eee;
+    color: white;
+    text-transform: uppercase;
+    padding:7px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+button.editConfirm:hover {
+    background-position: right center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    
+    background-size: cover;
+}
+.icon.check {
+    background-image: url(images/radio.png);
+}
+.icon.check.completed {
+    background-image: url(images/check.png);
+}
+.icon.edit {
+    background-image: url(images/edit.png);
+}
+.icon.delete {
+    background-image: url(images/close.png);
+}
+.icon:hover {
+    cursor: pointer;
+}
+.icon.todo-icon {
+    background-image: url(images/pencil.png);
+}
+
+/* ***************************************** */
+
+/* @media only screen and (max-width: 600px) {
+    .container {
+        width: 100vw;
+    }
+} */
