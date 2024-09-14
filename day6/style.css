@@ -26,10 +26,9 @@ body {
     padding: 20px;
     border-radius: 20px;
     min-height: 60vh;
-    max-width: 500px;
-    width: 100vw;
+    width: min(500px, 100vw);
     max-height: 100vh;
-    overflow-y: auto;
+    overflow: auto;
 }
 .container .header {
     display: flex;
@@ -100,8 +99,11 @@ body {
     text-decoration: line-through;
     color: rgb(146, 146, 146);
 }
-.container .todo-items .todo-item i {
-    padding: 5px;
+.container .todo-items .todo-item div:focus {
+    text-decoration: none;
+    outline: none;
+    border: 1px solid gray;
+    color: black;
 }
 .container .todo-items .todo-item > * {
     display: flex;
@@ -109,7 +111,7 @@ body {
 }
 button.editConfirm {
     grid-column: span 2;
-    border-radius: 10px;
+    border-radius: 5px;
     background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%);
     background-size: 200% auto;
     transition: 0.5s;
