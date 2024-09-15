@@ -1,11 +1,16 @@
+:root {
+    --body-color: #FFF8E8;
+    --base-color: #F7EED3;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body {
-    background-color: #FFF8E8;
+    background-color: var(--body-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +23,7 @@ body {
 /* ***************************************** */
 
 .container {
-    background-color: #F7EED3;
+    background-color: var(--base-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +34,7 @@ body {
     width: min(500px, 100vw);
     max-height: 100vh;
     overflow: auto;
+    box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.1);
 }
 .container .header {
     display: flex;
@@ -74,10 +80,11 @@ body {
     color: grey;
     font-size: 1.1em;
     outline: none;
+    padding-right: 70px;
 }
 .container .input-field input:hover {
     background-color: transparent;
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.1);
     border-color: transparent;
 }
 
@@ -93,7 +100,13 @@ body {
     font-size: 1.2em;
     display: grid;
     grid-template-columns: auto 1fr auto auto;
+    align-items: center;
     gap: 15px;
+}
+
+/* .container */
+.container .todo-items .todo-item div {
+    word-break: break-all;
 }
 .container .todo-items .todo-item div.completed {
     text-decoration: line-through;
@@ -102,13 +115,10 @@ body {
 .container .todo-items .todo-item div:focus {
     text-decoration: none;
     outline: none;
-    border: 1px solid gray;
-    color: black;
+    border-bottom: 1px solid gray;
+    color: #134E5E;
 }
-.container .todo-items .todo-item > * {
-    display: flex;
-    align-items: center;
-}
+
 button.editConfirm {
     grid-column: span 2;
     border-radius: 5px;
