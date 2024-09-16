@@ -19,6 +19,29 @@ body {
 .displayNone {
     display: none !important;
 }
+/* Handling Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    /* border-radius: 200px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 200px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 200px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 /* ***************************************** */
 
@@ -29,7 +52,6 @@ body {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    border-radius: 20px;
     min-height: 60vh;
     width: min(500px, 100vw);
     max-height: 100vh;
@@ -39,7 +61,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid rgb(184, 184, 184);
 }
 .container .input-field {
     width: 100%;
@@ -168,8 +189,8 @@ button.editConfirm:hover {
 
 /* ***************************************** */
 
-/* @media only screen and (max-width: 600px) {
+@media (min-width: 500px) {
     .container {
-        width: 100vw;
+        border-radius: 20px;
     }
-} */
+}
