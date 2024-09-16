@@ -23,13 +23,6 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
-    /* border-radius: 200px; */
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 200px;
 }
 
 /* Handle */
