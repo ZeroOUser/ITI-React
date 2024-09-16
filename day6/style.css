@@ -59,12 +59,29 @@ body {
     width: 100%;
     position: relative;
 }
+.container .input-field input {
+    width: 100%;
+    padding: .7em;
+    border-radius: 25px;
+    border: 1px solid gray;
+    text-indent: 10px;
+    background-color: #FFEAC5;
+    color: grey;
+    font-size: 1.1em;
+    outline: none;
+    padding-right: 70px;
+}
+.container .input-field input:hover {
+    background-color: transparent;
+    box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
 .container .input-field .button {
     position: absolute;
     width: fit-content;
     height: 100%;
     padding: 15px 20px;
-    border-radius: 0 50% 50% 0;
+    border-radius: 0 25px 25px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,23 +101,7 @@ body {
     box-shadow: 0 0 20px #eee;
 }
  
-.container .input-field input {
-    width: 100%;
-    padding: .7em;
-    border-radius: 25px;
-    border: 1px solid gray;
-    text-indent: 10px;
-    background-color: #FFEAC5;
-    color: grey;
-    font-size: 1.1em;
-    outline: none;
-    padding-right: 70px;
-}
-.container .input-field input:hover {
-    background-color: transparent;
-    box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.1);
-    border-color: transparent;
-}
+
 
 /* ***************************************** */
 
