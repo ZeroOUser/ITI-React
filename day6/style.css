@@ -33,13 +33,13 @@ body {
     min-height: 60vh;
     width: min(500px, 100vw);
     max-height: 100vh;
-    overflow: auto;
     box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.1);
 }
 .container .header {
     display: flex;
     align-items: center;
     gap: 10px;
+    border-bottom: 1px solid rgb(184, 184, 184);
 }
 .container .input-field {
     width: 100%;
@@ -94,6 +94,7 @@ body {
     width: 100%;
     display: grid;
     gap: 10px;
+    overflow: auto;
 }
 .container .todo-items .todo-item {
     padding: 5px;
