@@ -35,10 +35,11 @@ span {
 }
 .icon {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 24px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-repeat: no-repeat;
 }
 
 .clearFix {
@@ -108,7 +109,6 @@ section .icon.logo::before {
     height: 200%;
     border-radius: 50%;
     border: 1px solid #000;
-
 }
 section h2 {
     text-transform: uppercase;
@@ -118,9 +118,7 @@ section h2 {
 }
 
 section p {
-    
     text-align: center;
-    
 }
 button {
     padding: 25px;
@@ -211,11 +209,10 @@ footer .icon {
     border: 1px solid #000;
 }
 .icon.twitter {
-    background-image: url(icons/x.png);
+    background-image: url(icons/twitter.png);
 }
 .icon.twitter:hover {
-    background-color: url(icons/x-hover.png);
-    color: black;
+    background-image: url(icons/twitter2-hover.png);
 }
 .icon.facebook {
     background-image: url(icons/facebook.png);
@@ -236,10 +233,10 @@ footer .icon {
     background-image: url(icons/linkedin-hover.png);
 }
 .icon.email {
-    background-image: url(icons/linkedin2.png);
+    background-image: url(icons/mail.png);
 }
 .icon.email:hover {
-    background-image: url(icons/linkedin2-hover.png);
+    background-image: url(icons/mail-hover.png);
 }
 
 /* ***************************** */
