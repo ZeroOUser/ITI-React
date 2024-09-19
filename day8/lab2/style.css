@@ -1,3 +1,8 @@
+:root {
+    --body-clr: #f4f4f4;
+    --base-clr: #3a3939;
+    --font-clr: #828282;
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +15,8 @@ html {
     sans-serif;
 }
 body {
-    background-color: #f4f4f4;
+    background-color: var(--body-clr);
+    position: relative;
 }
 ul {
     list-style: none;
@@ -21,12 +27,16 @@ ul li {
 ul li+li {
     margin-left: 15px;
 }
-body > *+* {
+label {
+    text-transform: capitalize;
+    display: block;
+}
+body > *+*+* {
     /* background-color: #fff; */
     margin-top: 4%;
 }
 p {
-    color: #828282;
+    color: var(--font-clr);
     font-weight: 100;
     font-size: 1.4em;
 }
@@ -40,6 +50,7 @@ span {
     width: 24px;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .clearFix {
@@ -52,11 +63,32 @@ span {
     background-color: #484747;
     margin: 50px auto;
 }
+nav {
+    background-color: #fff;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 10;
+    transition: top 1s linear;
+}
+nav ul {
+    width: fit-content;
+    margin: 0 auto;
+}
+.hidden {
+    top: -7%;
+}
+input[type="color"] {
+    cursor: pointer;
+}
 
 /* ***************************** */
 
 body > header {
-    background-color: #3a3939;
+    background-color: var(--base-clr);
     color: #fff;
     text-align: center;
     padding: 150px 0;
@@ -208,6 +240,20 @@ footer ul {
 footer .icon {
     border: 1px solid #000;
 }
+
+.icon.up {
+    background-image: url(icons/up-arrow.png);
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: #fff;
+    border-radius: 0;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    
+}
 .icon.twitter {
     background-image: url(icons/twitter.png);
 }
@@ -238,6 +284,7 @@ footer .icon {
 .icon.email:hover {
     background-image: url(icons/mail-hover.png);
 }
+
 
 /* ***************************** */
 
