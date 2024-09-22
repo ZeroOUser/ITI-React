@@ -1,0 +1,188 @@
+:root {
+  --body-clr: #fff8e8;
+  --base-clr: #fff;
+  --secondary-clr: #ffeac5;
+  --btn-clr: #aab396;
+  --focus-btn-clr: #787f69;
+  --box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.1);
+  --accent-clr: rgb(146, 146, 146);
+  --focus-lnk-clr: rgb(12, 12, 123);
+}
+*,
+*::before,
+*::after,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: var(--body-clr);
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+input {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-clr);
+  font-size: 1.2rem;
+}
+input[type="submit"] {
+  background-color: var(--btn-clr);
+}
+input[type="submit"]:is(:hover) {
+  background-color: var(--focus-btn-clr);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  color: var(--focus-lnk-clr);
+}
+a:visited {
+  color: blue;
+}
+span {
+  display: inline-block;
+}
+#signup-errorMessage, #login-errorMessage {
+  color: rgb(243, 78, 78);
+  align-self: center;
+  text-transform: capitalize;
+  /* display: none; */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.icon:is(:hover) {
+  cursor: pointer;
+}
+.icon.todo-icon {
+  background-image: url(images/pencil.png);
+}
+.icon.person-icon {
+  background-image: url(images/profile.png);
+}
+.icon.hidden-eye-icon {
+  background-image: url(images/lock.png);
+}
+.icon.email-icon {
+  background-image: url(images/mail.png);
+}
+/* ***************************** */
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  
+  padding: 1rem;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+form {
+  width: min(500px, 100vw);
+  height: min(1000px, 94%);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+}
+form .container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-clr);
+  border-radius: 30px 30px 0 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: var(--box-shadow);
+  gap: 5px;
+}
+form .container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+form .container .input-field {
+  display: grid;
+  gap: 15px;
+  justify-items: end;
+}
+form .container .input-field > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  gap: 5px;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  position: relative;
+  
+}
+form .container .input-field > div label {
+  grid-column: span 2;
+}
+form .container .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+form .container .btns input[type="submit"] {
+  width: 100%;
+  padding: .7rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 10px;
+}
+#signup-form {
+  position: absolute;
+  /* transition: left 1s ease-out, transform 1s ease-in-out; */
+  /* transition: transform 1s;
+  transform-origin: right center;
+  transform: scaleX(0); */
+  transition: top 1s;
+  top: 120%;
+  /* transform: scale(0); */
+  /* left: 120%; */
+  /* transform: translateX(100%); */
+}
+/* #loginForm {
+  position: absolute;
+} */
+.slide {
+  /* transform: scale(1) rotate(360deg) !important; */
+  /* transform: scaleX(1)!important; */
+  /* left: 0 !important; */
+  top: 0 !important;
+  /* transform: translateX(0) !important; */
+}
+/* @media (min-width: 1000px) {
+  form {
+    overflow: visible;
+  }
+} */
+
