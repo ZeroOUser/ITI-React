@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2em;
+    gap: 50px;
+    padding: 20px 50px;
+}
+body > * {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+}
+
+
+.container {
+    background-color: #eee;
+    padding: 5px;
+    width: 100%;
+    min-height: 90vh;
+    min-height: 90svh;
+    gap: 10px 20px;
+}
+.container * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+}
+.img {
+    background-color: brown;
+}
+.container article {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+.container article .img-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 40%;
+    align-items: stretch;
+    padding: 10px;
+}
+.container article .img-container > div {
+    flex: 1;
+}
+
+
+
+/* ********************************** */
+/* flex */
+.flex .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex .container header {
+    width: 100%;
+    height: 10%;
+}
+.flex .container aside {
+    flex: 1;
+    align-self: stretch;
+    height: 80%;
+}
+.flex .container article {
+    flex: 3;
+    height: 80%;
+}
+
+.flex .container footer {
+    width: 100%;
+    height: 10%;
+}
+
+
+/* ********************************** */
+/* flex-another-way */
+.flex-another-way .container {
+    display: flex;
+    flex-direction: column;
+}
+.flex-another-way .container header {
+    height: 10%;
+}
+.flex-another-way .container main {
+    flex: 1;
+}
+.flex-another-way .container main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: transparent;
+}
+.flex-another-way .container main aside {
+    flex: 1;
+    height: 100%;
+}
+.flex-another-way .container main article {
+    flex: 3;
+    height: 100%;
+}
+.flex-another-way .container footer {
+    height: 10%;
+}
+
+
+
+
+
+/* ********************************** */
+/* grid */
+.grid .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+}
+.grid .container header {
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+.grid .container article {
+    grid-column: 2 / -1;
+}
+.grid .container footer {
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+
+/* ********************************** */
+/* grid-another-way */
+.grid-another-way .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header header"
+    "aside article article"
+    "footer footer footer";
+    
+}
+.grid-another-way .container header {
+    grid-area: header;
+    padding: 20px;
+}
+.grid-another-way .container aside {
+    grid-area: aside;
+}
+.grid-another-way .container article{
+    grid-area: article;
+}
+.grid-another-way .container footer {
+    grid-area: footer;
+    padding: 20px;
+}
