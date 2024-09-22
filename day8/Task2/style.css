@@ -32,7 +32,6 @@ label {
     display: block;
 }
 body > *+*+* {
-    /* background-color: #fff; */
     margin-top: 4%;
 }
 p {
