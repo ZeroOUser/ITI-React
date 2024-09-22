@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+.container > * {
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* **************************************** */
+/* Task 1 */
+.container .task1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+.task1 h2 {
+    grid-column: span 2;
+    margin-bottom: 0;
+}
+.task1 canvas {
+    grid-column: 1 / -1;
+    border: #000 solid 2px;
+}
+.task1 button {
+    text-transform: capitalize;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #7a7a7a;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+}
+.task1 button:hover {
+    background-color: #5d5d5d;
+    cursor: pointer;
+}
+.task1 input[type="color"] {
+    cursor: pointer;
+}
+
+/* **************************************** */
+/* Task 2 */
+.task2 img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    transition: opacity 2s;
+}
+.task2 img:hover {
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* **************************************** */
+/* Task 3 */
+.task3 button {
+    border: 2px solid #3b6bd3ee;
+    outline: none;
+    background-color: #789dedee;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+}
+.task3 button:hover {
+    cursor: pointer;
+    background-color: #aa46a3ee;
+    animation: lightening 1s linear infinite alternate;
+}
+@keyframes lightening {
+    0% {box-shadow: 2px 2px 48px 10px #3b6bd3ee;}
+    25% {box-shadow: 2px 2px 48px 10px #55276aee;}
+    50% {box-shadow: 2px 2px 48px 10px #276e7bee;}
+    75% {box-shadow: 2px 2px 48px 10px #ca2d2dee;}
+    100% {box-shadow: 2px 2px 48px 10px #a8d33bee;}
+    
+}
+
+/* **************************************** */
+/* Task 4 */
+.task4 {
+    position: relative;
+    height: 400px;
+    border-bottom: #000 solid 2px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    animation: bouncingBall 1.5s linear  infinite;
+}
+@keyframes bouncingBall {
+    0% {top: 50%; height: 100px;}
+    25% {top: 75%; height: 100px;}
+    50% {top: 100%; height: 50px;}
+    75% {top: 75%; height: 100px;}
+    100% {top: 50%; height: 100px;}
+}
