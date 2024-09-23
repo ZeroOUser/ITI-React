@@ -50,8 +50,7 @@ span {
     aspect-ratio: 1/1;
     border-radius: 50%;
     cursor: pointer;
-    transition-property: background-image;
-    transition-delay: 1s;
+    
 }
 
 .clearFix {
@@ -73,20 +72,31 @@ nav {
     width: 100%;
     padding: 5px;
     z-index: 10;
-    transition: top 1s linear;
+    transition: transform .5s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 nav ul {
-    width: fit-content;
-    margin: 0 auto;
+    text-align: center;
 }
 .hidden {
-    top: -7%;
+    transform: translateY(-100%);
 }
 .hidden .icon {
     background-image: url(icons/down-arrow.png) !important;
 }
 input[type="color"] {
     cursor: pointer;
+}
+#reset-btn {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    letter-spacing: 2px;
+
 }
 
 /* ***************************** */
@@ -256,6 +266,8 @@ footer .icon {
     padding: 10px;
     width: 30px;
     height: 30px;
+    transition-property: background-image;
+    transition-delay: .5s;
     
 }
 .icon.twitter {

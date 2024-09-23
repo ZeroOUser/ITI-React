@@ -1,4 +1,6 @@
 let htmlElement = document.querySelector(':root');
+
+const resetBtn = document.getElementById('reset-btn');
 window.onload = function() {
     if (localStorage.getItem('bodyClr') !== null) 
         htmlElement.style.setProperty('--body-clr', localStorage.getItem('bodyClr'));
@@ -24,4 +26,8 @@ baseClr.addEventListener('input', function() {
 })
 fontClr.addEventListener('input', function() {
     htmlElement.style.setProperty('--font-clr', localStorage.fontClr = fontClr.value);
+})
+resetBtn.addEventListener('click', function() {
+    localStorage.clear();
+    location.reload();
 })
