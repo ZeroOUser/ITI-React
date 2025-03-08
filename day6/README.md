@@ -11,7 +11,7 @@ This is a **responsive To-Do List** application where users can add, edit, compl
 - **Responsive Design**: The application is fully responsive and adapts to various screen sizes (mobile, tablet, desktop).
   
 ## Demo
-<a href="[TODO-List](https://velvety-caramel-8e5f5c.netlify.app/day6/)" target="_blank">TODO-List</a>
+<a href="https://velvety-caramel-8e5f5c.netlify.app/day6/" target="_blank">Link</a>
 
 ## Technologies Used
 
