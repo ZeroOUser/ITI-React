@@ -11,7 +11,7 @@ This Task is a **responsive login and signup page** where users can register and
 
 ## Demo
 
-<a href="https://velvety-caramel-8e5f5c.netlify.app/day6/" target="_blank">Link</a>
+<a href="https://velvety-caramel-8e5f5c.netlify.app/day7/" target="_blank">Link</a>
 
 
 ## Technologies Used
